@@ -8,5 +8,5 @@
 #' @examples
 #' squared(3)
 squared <- function(x) {
-  x^2
+  purr:map_dbl(x, function(y) y^2)
 }
